@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
-     Name="GDBCS_LIST"
+     Name="GDBCSList"
      ProductID="{72d608b0-bd85-4d47-8b97-996bb0ee442e}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>GD.BCS_LIST</Title>
+    <Title>BCS List Example</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 

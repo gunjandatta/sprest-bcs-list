@@ -1,9 +1,28 @@
 {
   "name": "sprest-bcs-list",
   "version": "0.0.0",
-  "description": "sprest-bcs-list",
-  "main": "server.js",
+  "description": "User Interface for the SharePoint BCS List Add-In, built using the Office Fabric React framework.",
+  "main": "src/index.tsx",
   "author": {
-    "name": "gunja"
+    "name": "Gunjan Datta"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "webpack-dev-server --hot --inline --colors --progress"
+  },
+  "dependencies": {
+    "gd-sprest": "^0.9.92",
+    "office-ui-fabric-react": "^0.81.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "file-loader": "^0.9.0",
+    "react-hot-loader": "^1.3.1",
+    "ts-loader": "^1.3.0",
+    "webpack": "^1.13.3"
   }
 }

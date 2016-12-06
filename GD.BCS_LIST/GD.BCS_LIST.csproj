@@ -54,7 +54,6 @@
     <None Include="External Content Types\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{46c5a643-9e80-47c0-869f-3eedd8e91c3d}</SharePointProjectItemId>
     </None>
-    <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{72d608b0-bd85-4d47-8b97-996bb0ee442e}</SharePointProjectItemId>
     </None>
@@ -65,15 +64,11 @@
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{312f687b-d187-4ba3-b6f8-c2648fb6698e}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
-    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
@@ -117,4 +112,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(SolutionDir)sprest-bcs-list\dist\bundle.js" "$(SolutionDir)GD.BCS_LIST\Scripts\App.js"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
