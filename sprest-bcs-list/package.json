@@ -1,0 +1,9 @@
+{
+  "name": "sprest-bcs-list",
+  "version": "0.0.0",
+  "description": "sprest-bcs-list",
+  "main": "server.js",
+  "author": {
+    "name": "gunja"
+  }
+}
